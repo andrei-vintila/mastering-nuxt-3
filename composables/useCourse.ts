@@ -1,4 +1,5 @@
 import courseData from "./courseData";
+<<<<<<< HEAD
 
 type Lesson = {
   title: string;
@@ -36,5 +37,17 @@ export const useCourse = (): Course => {
   return {
     ...courseData,
     chapters,
+=======
+export const useCourse = () => {
+  return {
+    ...courseData,
+    chapters: courseData.chapters.map((chapter) => ({
+      ...chapter,
+      lessons: chapter.lessons.map((lesson) => ({
+        ...lesson,
+        path: `/course/chapter/${chapter.slug}/lesson/${lesson.slug}`,
+      })),
+    })),
+>>>>>>> from-begining
   };
 };

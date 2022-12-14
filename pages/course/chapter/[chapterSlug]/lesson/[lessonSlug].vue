@@ -30,6 +30,7 @@
 const course = useCourse();
 const route = useRoute();
 
+<<<<<<< HEAD
 definePageMeta({
   validate({ params }) {
     const course = useCourse();
@@ -59,12 +60,17 @@ definePageMeta({
   },
 });
 
+=======
+>>>>>>> from-begining
 const chapter = computed(() => {
   return course.chapters.find(
     (chapter) => chapter.slug === route.params.chapterSlug
   );
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> from-begining
 const lesson = computed(() => {
   return chapter.value.lessons.find(
     (lesson) => lesson.slug === route.params.lessonSlug
