@@ -17,7 +17,7 @@
         <p>
           Go to the
           <a class="hover:cursor-pointer" @click="handleError">first lesson.</a>
-        </p>
+        </p> 
       </div>
     </div>
   </NuxtLayout>
